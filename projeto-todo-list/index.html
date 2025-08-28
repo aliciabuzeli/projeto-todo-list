@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tarefas</title>
+    <title>To do </title>
     <link rel="stylesheet" href="./assets/css/estilo.css">
+    
 </head>
 <body>
-    <header >
-        <img class="logo"  src="./assets/images/Logo.png" 
+<header>
+        <img src="./assets/images/Logo.png" 
              alt="Logo ToDo List" />
     </header>
     <main>
         <!-- Formulario de Cadastro -->
-        <section class="form-section">
-            <form id="formCadastroTarefa" class="task-form">
+        <section>
+            <form id="formCadastroTarefa">
                 <input type="text" 
                        name="tarefa"
                        required minlength="2"  
                        placeholder="Adicione uma nova tarefa" />
                 
-                <button type="submit" class="btn-criar">
+                <button type="submit">
                     Criar 
                     <img src="./assets/images/Vector.png" 
                          alt="Icone de Criar Tarefa" />
@@ -29,18 +30,18 @@
         </section>
 
         <!-- Seção dos contadores -->
-        <section class="stats">
-            <div class="created">
+        <section>
+            <div>
                 <p>Tarefas criadas</p>
                 <span id="numTarefas">12</span>
             </div>
 
-            <div class="done-count">
+            <div>
                 <p>Concluídas</p>
                 <span id="numConcluidas">10</span>
             </div>
 
-            <div class="search">
+            <div>
                 <input type="text" id="inputBusca" 
                        placeholder="Busque por Tarefas" />
             </div>
@@ -48,36 +49,23 @@
 
 
         <!-- Quando não tem nenhuma tarefa -->
-        <section id="semTarefas" class="empty">
+        <section id="semTarefas">
             <img src="./assets/images/ClipboardTextRegular.png" 
                  alt="Icone quando não possui tarefas" />
             <h3>Você ainda não tem tarefas cadastradas</h3>
             <p>Crie tarefas e organize seus itens a fazer</p>
         </section>
 
-        <!-- Quando TEM tarefa -->
-         <section id="listaTarefas" class="task-list">
-            <div class="task">
-                <button class="btn-concluir" title="Concluir Tarefa"></button>
-                <p>Lorem ipsum dolor, sit amet consectetur 
-                   adipisicing elit.</p>
-                <button title="Excluir Tarefa">
-                    <img class="btn-excluir" src="./assets/images/Delete.png" 
-                         alt="Icone Lixeira" />
-                </button>
-            </div>
-
-            <div class="task done">
-                <button title="Concluir Tarefa"></button>
-                <p>Lorem ipsum dolor, sit amet consectetur 
-                   adipisicing elit.</p>
-                <button class="btn-excluir title="Excluir Tarefa">
-                    <img src="./assets/images/Delete.png" 
-                         alt="Icone Lixeira" />
-                </button>
-            </div>
+        
+        <section id="listaTarefas">
+            
          </section>
     </main>
-<script src="./assets/js/app.js"></script>
+
+
+    <script src="./assets/js/app.js"></script>
+
+    
+
 </body>
 </html>
